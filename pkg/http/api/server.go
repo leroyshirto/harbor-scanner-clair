@@ -32,7 +32,7 @@ func (s *Server) ListenAndServe() {
 		if err := s.listenAndServe(); err != http.ErrServerClosed {
 			log.Fatalf("Error: %v", err)
 		}
-		log.Trace("API server stopped listening for incoming connections")
+		log.Trace("APIs server stopped listening for incoming connections")
 	}()
 }
 
